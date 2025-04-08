@@ -49,7 +49,7 @@ const moveDirectories = async (userInput) => {
   try {
     if (userInput === "y") {
       // Create the app-example directory
-      await fs.promises.mkdir(exampleDirPath, { recursive: true });
+      await fs.promises.mkdir(exampleDirPath, {recursive: true});
       console.log(`📁 /${exampleDir} directory created.`);
     }
 
@@ -62,7 +62,7 @@ const moveDirectories = async (userInput) => {
           await fs.promises.rename(oldDirPath, newDirPath);
           console.log(`➡️ /${dir} moved to /${exampleDir}/${dir}.`);
         } else {
-          await fs.promises.rm(oldDirPath, { recursive: true, force: true });
+          await fs.promises.rm(oldDirPath, {recursive: true, force: true});
           console.log(`❌ /${dir} deleted.`);
         }
       } else {
@@ -72,7 +72,7 @@ const moveDirectories = async (userInput) => {
 
     // Create new /app directory
     const newAppDirPath = path.join(root, newAppDir);
-    await fs.promises.mkdir(newAppDirPath, { recursive: true });
+    await fs.promises.mkdir(newAppDirPath, {recursive: true});
     console.log("\n📁 New /app directory created.");
 
     // Create index.tsx
@@ -91,7 +91,7 @@ const moveDirectories = async (userInput) => {
         userInput === "y"
           ? `\n3. Delete the /${exampleDir} directory when you're done referencing it.`
           : ""
-      }`
+      }`,
     );
   } catch (error) {
     console.error(`❌ Error during script execution: ${error.message}`);
@@ -108,5 +108,5 @@ rl.question(
       console.log("❌ Invalid input. Please enter 'Y' or 'N'.");
       rl.close();
     }
-  }
+  },
 );

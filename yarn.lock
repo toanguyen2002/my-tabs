@@ -2301,7 +2301,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/bottom-tabs@npm:^7.2.0":
+"@react-navigation/bottom-tabs@npm:^7.2.0, @react-navigation/bottom-tabs@npm:^7.3.9":
   version: 7.3.9
   resolution: "@react-navigation/bottom-tabs@npm:7.3.9"
   dependencies:
@@ -2352,7 +2352,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/native-stack@npm:^7.2.0":
+"@react-navigation/material-top-tabs@npm:^7.2.9":
+  version: 7.2.9
+  resolution: "@react-navigation/material-top-tabs@npm:7.2.9"
+  dependencies:
+    "@react-navigation/elements": ^2.3.7
+    color: ^4.2.3
+    react-native-tab-view: ^4.0.9
+  peerDependencies:
+    "@react-navigation/native": ^7.1.5
+    react: ">= 18.2.0"
+    react-native: "*"
+    react-native-pager-view: ">= 6.0.0"
+  checksum: 806ddeed335991a1e5239b5b2c8391a6d7b7b0a659b39d79b042e46aa6927eb98ae374e6339d89101c9382c11667f57c844fe734c77d4e59940e7f086d3f3a98
+  languageName: node
+  linkType: hard
+
+"@react-navigation/native-stack@npm:^7.2.0, @react-navigation/native-stack@npm:^7.3.9":
   version: 7.3.9
   resolution: "@react-navigation/native-stack@npm:7.3.9"
   dependencies:
@@ -2368,7 +2384,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/native@npm:^7.0.14":
+"@react-navigation/native@npm:^7.0.14, @react-navigation/native@npm:^7.1.5":
   version: 7.1.5
   resolution: "@react-navigation/native@npm:7.1.5"
   dependencies:
@@ -8122,6 +8138,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-pager-view@npm:^6.7.0":
+  version: 6.7.0
+  resolution: "react-native-pager-view@npm:6.7.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: dab79d98cd9186df8cb6ce62f00d1255490d8ba70bda68709d3adcf7fde5d72f66efcaa5c787c8d1291605e251912862e903f19d6dac2c02479a341c17625597
+  languageName: node
+  linkType: hard
+
 "react-native-reanimated@npm:~3.16.1":
   version: 3.16.7
   resolution: "react-native-reanimated@npm:3.16.7"
@@ -8165,6 +8191,19 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 6e90539e8eb79ba4b3fd23f6c27b943e3595c9c275b3002e6b376eb0a1c17521bde9b05d0b2c4c7ab67042f20bdbec87c3d1e3d182a531b7e3115a2dace0e912
+  languageName: node
+  linkType: hard
+
+"react-native-tab-view@npm:^4.0.9":
+  version: 4.0.9
+  resolution: "react-native-tab-view@npm:4.0.9"
+  dependencies:
+    use-latest-callback: ^0.2.1
+  peerDependencies:
+    react: ">= 18.2.0"
+    react-native: "*"
+    react-native-pager-view: ">= 6.0.0"
+  checksum: 6f583876cc99815e3b4bb883fb83e0db28c81624408a1716b92330b41e79d542fc03f75c3064c692fcafb47c2e164a75beaeda5e4e84615f097e3e3ab7f11766
   languageName: node
   linkType: hard
 
@@ -8315,8 +8354,10 @@ __metadata:
   dependencies:
     "@babel/core": ^7.25.2
     "@expo/vector-icons": ^14.0.2
-    "@react-navigation/bottom-tabs": ^7.2.0
-    "@react-navigation/native": ^7.0.14
+    "@react-navigation/bottom-tabs": ^7.3.9
+    "@react-navigation/material-top-tabs": ^7.2.9
+    "@react-navigation/native": ^7.1.5
+    "@react-navigation/native-stack": ^7.3.9
     "@types/jest": ^29.5.12
     "@types/react": ~18.3.12
     "@types/react-test-renderer": ^18.3.0
@@ -8338,6 +8379,7 @@ __metadata:
     react-dom: 18.3.1
     react-native: 0.76.9
     react-native-gesture-handler: ~2.20.2
+    react-native-pager-view: ^6.7.0
     react-native-reanimated: ~3.16.1
     react-native-safe-area-context: 4.12.0
     react-native-screens: ~4.4.0

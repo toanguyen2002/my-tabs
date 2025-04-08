@@ -1,5 +1,6 @@
 {
   "expo": {
+    "entryPoint": "./src/app/index.js",
     "name": "react_my_bottom",
     "slug": "react_my_bottom",
     "version": "1.0.0",
